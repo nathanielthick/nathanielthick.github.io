@@ -1,5 +1,6 @@
 /* ==========================================================================
    Nathaniel Thickett — portfolio
+   Version 2026112402 (keep in sync with the ?v= tag in index.html and 404.html)
    Plain CSS, no build step. Colors are tokens; dark mode redefines them.
    ========================================================================== */
 
@@ -494,46 +495,11 @@ code, kbd, pre { font-family: var(--font-mono); }
 }
 @keyframes blink { 50% { opacity: 0; } }
 
-/* ---------- Stats strip ---------- */
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: var(--surface);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-}
-.stat {
-  padding: 26px 26px 24px;
-  border-left: 1px solid var(--line);
-}
-.stat:first-child { border-left: 0; }
-.stat-value {
-  font-size: 34px;
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-.stat-value small {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: -0.01em;
-  margin-right: 4px;
-}
-.stat-label {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.45;
-  color: var(--muted);
-}
-
 /* ---------- Sections ---------- */
 
 .section { padding: 112px 0 0; }
 .section:last-of-type { padding-bottom: 112px; }
+.hero + .section { padding-top: 24px; }
 
 .section-head {
   display: flex;
@@ -1285,9 +1251,6 @@ code, kbd, pre { font-family: var(--font-mono); }
   }
   .cards, .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .about-grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .stat:nth-child(3) { border-left: 0; }
-  .stat:nth-child(n + 3) { border-top: 1px solid var(--line); }
 }
 
 @media (max-width: 860px) {
@@ -1326,10 +1289,6 @@ code, kbd, pre { font-family: var(--font-mono); }
   .code-card pre { font-size: 12px; padding: 16px; }
   .section { padding-top: 84px; }
   .section:last-of-type { padding-bottom: 84px; }
-  .stats { grid-template-columns: 1fr 1fr; }
-  .stat { padding: 20px 18px; }
-  .stat-value { font-size: 28px; }
-  .stat-label { font-size: 13px; }
   .project-body { padding: 28px 22px 26px; }
   .project h3 { font-size: 24px; }
   .project-visual, .project.is-flipped .project-visual { padding: 28px 16px; }
@@ -1345,12 +1304,6 @@ code, kbd, pre { font-family: var(--font-mono); }
   .prose p { font-size: 16.5px; }
   .facts div { font-size: 14px; }
   .brand-name { display: none; }
-}
-
-@media (max-width: 380px) {
-  .stats { grid-template-columns: 1fr; }
-  .stat { border-left: 0 !important; }
-  .stat + .stat { border-top: 1px solid var(--line); }
 }
 
 @media print {

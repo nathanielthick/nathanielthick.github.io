@@ -1,6 +1,6 @@
 # nathanielthick.github.io
 
-Personal portfolio for **Nathaniel Thickett**, Test Engineer & Software Developer.
+Personal portfolio for **Nathaniel Thickett**: desktop tools, websites and automation, with experience across software, IT, e-commerce and test engineering.
 
 **Live site:** https://nathanielthick.github.io/
 
@@ -39,8 +39,8 @@ GitHub Pages serves the `main` branch. Push to `main` and the site updates withi
 
 - **Projects, jobs and skills** are plain HTML in `index.html`, one block per item. Copy a block that's already there to add a new one.
 - **Résumé:** replace `assets/Nathaniel-Thickett-Resume.pdf` and keep the same file name, so every link keeps working.
-- **After changing `site.css` or `site.js`:** bump the `?v=` date in `index.html` and `404.html` so browsers fetch the new file instead of a cached copy.
-- **Job title or headline:** also update the `<title>`, the meta description, the Open Graph tags and the JSON-LD block at the top of `index.html`, then regenerate `images/og-card.png`.
+- **After changing `site.css` or `site.js`:** bump the version tag so browsers fetch the new file instead of a cached copy. The version is the date plus a two-digit counter (for example `2026112402`). Change it in three places: the `?v=` on the CSS and JS links in `index.html`, the `?v=` on the CSS link in `404.html`, and the `Version` line at the top of `site.css`.
+- **Headline or positioning:** the site is written to fit any role you apply for, so it has no job title in the header or metadata. If you change the headline, also update the `<title>`, the meta description, the Open Graph tags and the JSON-LD block at the top of `index.html`, then regenerate `images/og-card.png`.
 - **`sitemap.xml`:** update `<lastmod>` after major content changes.
 
 ## Credits
