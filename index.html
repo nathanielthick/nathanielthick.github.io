@@ -1,363 +1,670 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nathaniel Thickett Portfolio Site</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nathaniel Thickett | Test Engineer &amp; Software Developer</title>
+  <meta name="description" content="Nathaniel Thickett is a test engineer and software developer in Southern Oregon. He designs test fixtures and adapter PCBs for IPC Class 3 electronics and builds Python tools, websites and automation, with a background in IT and e-commerce.">
+  <meta name="author" content="Nathaniel Thickett">
+  <link rel="canonical" href="https://nathanielthick.github.io/">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <meta name="theme-color" content="#f8f8f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0c10" media="(prefers-color-scheme: dark)">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-code"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Nathaniel Thickett</h1>
-								<p>Computer Science Systems student at Oregon State University</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">About</a></li>
-								<li><a href="#work">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nathaniel Thickett">
+  <meta property="og:title" content="Nathaniel Thickett | Test Engineer &amp; Software Developer">
+  <meta property="og:description" content="Test fixtures, Python tools, websites and automation that replace slow, error-prone manual work.">
+  <meta property="og:url" content="https://nathanielthick.github.io/">
+  <meta property="og:image" content="https://nathanielthick.github.io/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nathaniel Thickett, Test Engineer and Software Developer">
+  <meta name="twitter:card" content="summary_large_image">
 
-				<!-- Main -->
-					<div id="main">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">About</h2>
-								<!-- <span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
-								<p>Highly motivated and with a passion for delivering exceptional customer service. Proven track record of success in fast-paced environments, consistently providing high-quality service to guests. Skilled in team collaboration and issue resolution, with experience working effectively with customers, waitstaff, and management. Experienced in adapting collaborative and problem-solving skills to new environments. Passionate about technology and eager to explore opportunities in a tech-related position. Excited to apply problem-solving and collaborative skills to a role where I can learn and grow in a dynamic and innovative environment.</p>
-								<p><b>Software Development Experience:</b></p>
-								<ul>
-								  <li>C / C++</li>
-								  <li>Python</li>
-								<li>HTML, CSS, and JavaScript</li>
-								<li>SQL and PHP</li>
-								  <li>Haskell</li>
-								<li>Prolog</li>
-								</ul>
-								<p><b>Hardware Experience:</b></p>
-								<ul>
-								  <li>Used AVR assembly to program a microcontroller for various tasks</li>
-								<li>Designed digital logic using an FPGA to display an animation through a VGA connection</li>
-								<li>Made measurements and verified functionality of microcontroller using an oscilloscope</li>
-								  
-								</ul>
-								<p><a href="#work">Check out some of my past work here.</a></p>
-								
-							</article>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css?v=20261124">
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Projects</h2>
-								
-								<p><a href="https://github.com/nathanielthick/OSU-Portfolio/tree/main">SmallSh</a>: Shell program with basic functionality implemented in C. </p>
-								<p><a href="https://www.youtube.com/watch?v=J5ulm8RPIpY">Animation</a>: Simple animation made using digital logic on an FPGA that changes between image files stored in ROM.</p>
-								<iframe width="420" height="315"
-								src="https://www.youtube.com/embed/J5ulm8RPIpY?autoplay=1&mute=1">
-								</iframe>
-								
-							</article>
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") d.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nathaniel Thickett",
+    "url": "https://nathanielthick.github.io/",
+    "jobTitle": "Test Engineer",
+    "worksFor": { "@type": "Organization", "name": "Impact Electronic Solutions" },
+    "email": "mailto:natethickett@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Medford", "addressRegion": "OR", "addressCountry": "US" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Oregon State University" },
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "IPC/WHMA-A-620 Certified IPC Specialist (CIS)" },
+    "sameAs": ["https://www.linkedin.com/in/nathanielthickett", "https://github.com/nathanielthick"],
+    "knowsAbout": ["Test engineering", "Test fixture design", "KiCad PCB design", "Python", "TypeScript", "JavaScript", "SQL", "IT systems administration", "Web development", "E-commerce", "Automation"]
+  }
+  </script>
+</head>
+<body>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p>Phone: 541-941-6433</p>
-								<p>Email: natethickett@gmail.com</p>
-								
-			
-								<ul class="icons">
-			
-									<li><a href="https://www.instagram.com/n.thicky/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/nathanielthick/OSU-Portfolio" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-arrow-d" viewBox="0 0 24 24"><path d="M12 4v13"/><path d="m6 11 6 6 6-6"/><path d="M5 21h14"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><rect x="10" y="10" width="4" height="4"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 3h2.6l2.4 12.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2.5" y="3.5" width="19" height="13" rx="2"/><path d="M8 21h8M12 16.5V21"/><path d="m10 8 4 2-4 2z"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 12h3l2-6 4 12 3-9 2 3h6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="2.8"/><path d="M4 5.5v13c0 1.5 3.6 2.8 8 2.8s8-1.3 8-2.8v-13"/><path d="M4 12c0 1.5 3.6 2.8 8 2.8s8-1.3 8-2.8"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="7" rx="1.5"/><rect x="3" y="13.5" width="18" height="7" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></symbol>
+  <symbol id="i-workflow" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v4a3 3 0 0 0 3 3H14"/><path d="m12 15 2 2-2 2"/></symbol>
+</svg>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+<a class="skip-link" href="#main">Skip to content</a>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Nathaniel Thickett, back to top">
+      <span class="brand-mark" aria-hidden="true">NT</span>
+      <span class="brand-name">Nathaniel Thickett</span>
+    </a>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-resume" href="assets/Nathaniel-Thickett-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </nav>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch color theme">
+        <svg class="ico icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="ico icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn-secondary btn-sm" href="assets/Nathaniel-Thickett-Resume.pdf" target="_blank" rel="noopener">
+        <svg class="ico" aria-hidden="true"><use href="#i-file"/></svg>Résumé
+      </a>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-								<section>
-									<h3 class="major">Lists</h3>
+<main id="main">
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+  <!-- ===================== Hero ===================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to new roles · Southern Oregon</p>
+          <h1 id="hero-title">I build the tools that keep <span class="soft">operations running.</span></h1>
+          <p class="hero-lede">
+            I'm <strong>Nathaniel Thickett</strong>, a test engineer and software developer with a Computer Science degree from Oregon State.
+            I design test fixtures and adapter boards for IPC Class 3 electronics, and I build the desktop tools, websites and automation
+            that replace slow, error-prone manual work. Before that, I ran IT and e-commerce for a growing business.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#work">See my work <svg class="ico" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+            <a class="btn btn-secondary" href="assets/Nathaniel-Thickett-Resume.pdf" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#i-arrow-d"/></svg>Download résumé
+            </a>
+          </div>
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/nathanielthickett" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a href="https://github.com/nathanielthick" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+            <a href="mailto:natethickett@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>natethickett@gmail.com</a>
+          </div>
+        </div>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+        <div class="code-card" aria-hidden="true">
+          <div class="code-card-bar"><span class="dots"><i></i><i></i><i></i></span>about.json</div>
+<pre>{
+  <span class="c-key">"name"</span>: <span class="c-str">"Nathaniel Thickett"</span>,
+  <span class="c-key">"role"</span>: <span class="c-str">"Test Engineer"</span>,
+  <span class="c-key">"at"</span>: <span class="c-str">"Impact Electronic Solutions"</span>,
+  <span class="c-key">"degree"</span>: <span class="c-str">"B.S. CS, Oregon State"</span>,
+  <span class="c-key">"cert"</span>: <span class="c-str">"IPC/WHMA-A-620 CIS"</span>,
+  <span class="c-key">"builds"</span>: [<span class="c-str">"test fixtures"</span>, <span class="c-str">"tools"</span>,
+             <span class="c-str">"websites"</span>],
+  <span class="c-key">"stack"</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"TypeScript"</span>,
+            <span class="c-str">"SQL"</span>, <span class="c-str">"KiCad"</span>],
+  <span class="c-key">"open_to_work"</span>: <span class="c-num">true</span>
+}<span class="c-cursor"></span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+  <!-- ===================== Stats ===================== -->
+  <div class="container">
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-value">2,000+</div>
+        <p class="stat-label">Test adapters made searchable for Engineering and Cost Estimating</p>
+      </div>
+      <div class="stat">
+        <div class="stat-value"><small>up to</small>30%</div>
+        <p class="stat-label">Lift in weekly e-commerce revenue from campaigns I designed and ran</p>
+      </div>
+      <div class="stat">
+        <div class="stat-value">40+</div>
+        <p class="stat-label">Users supported as IT administrator for a growing company</p>
+      </div>
+      <div class="stat">
+        <div class="stat-value">6</div>
+        <p class="stat-label">Roles across test engineering, software, web, IT and e-commerce</p>
+      </div>
+    </div>
+  </div>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+  <!-- ===================== Work ===================== -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span class="section-num">01</span> Selected work</p>
+          <h2 id="work-title">Things I've built</h2>
+        </div>
+        <p>Most of these started as a slow or error-prone manual process. Source code is on GitHub wherever I can share it.</p>
+      </div>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+      <div class="projects">
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+        <!-- Adapter Lookup -->
+        <article class="project reveal" aria-labelledby="p-adapter">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-window">
+              <div class="mw-title">
+                <span class="left"><span class="app-ico"></span>Adapter Lookup</span>
+                <span class="win-ctl"><span>–</span><span>□</span><span>×</span></span>
+              </div>
+              <div class="mw-toolbar">
+                <div class="mw-search"><svg class="ico"><use href="#i-search"/></svg>d38999 socket<span class="caret"></span></div>
+                <span class="mw-btn">Filters</span>
+                <span class="mw-btn">Export CSV</span>
+              </div>
+              <div class="mw-chips">
+                <span class="mw-chip">Positions 10–60 <b>×</b></span>
+                <span class="mw-chip">Hide scrapped <b>×</b></span>
+                <span class="mw-chip">Group by adapter <b>×</b></span>
+              </div>
+              <table class="mw-table">
+                <thead><tr><th>Adapter</th><th>Connector P/N</th><th>Pos</th><th>Contacts</th></tr></thead>
+                <tbody>
+                  <tr class="sel"><td>ADP-3246</td><td>D38999/26WE35SN</td><td>55</td><td>Socket</td></tr>
+                  <tr><td>ADP-3246</td><td>D38999/26WD35SN</td><td>37</td><td>Socket</td></tr>
+                  <tr><td>ADP-1005</td><td>D38999/26WC35SN</td><td>22</td><td>Socket</td></tr>
+                  <tr><td>ADP-0412</td><td>D38999/24WB35SN</td><td>13</td><td>Socket</td></tr>
+                </tbody>
+              </table>
+              <div class="mw-status"><span>4 matches · 2 adapters</span><span class="lock"><i></i>Editing off</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Desktop app</span><span class="sep"></span><span>Python</span><span class="sep"></span><span>2026</span></div>
+            <h3 id="p-adapter">Adapter Lookup</h3>
+            <p class="project-summary">A Windows app that makes a shared Microsoft Access database of 2,000+ test adapters searchable by connector, pinout, insert arrangement and part number. Engineering uses it to reuse existing hardware, and Cost Estimating uses it so customers aren't charged for adapter parts already on hand.</p>
+            <ul class="project-points">
+              <li>Instant search across every column with multi-word matching and wildcards, plus range filters, pick-lists and removable filter chips</li>
+              <li>Editing is off by default, with undo for every change, a backup offered before the first edit, and a CSV change log of who changed what</li>
+              <li>Refuses an edit if someone else changed that row in the meantime, and ships as a single .exe so teammates don't need Python</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">pyodbc</span><span class="tag">MS Access</span><span class="tag">PyInstaller</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/nathanielthick/Adapter-Lookup-Access" target="_blank" rel="noopener">Source &amp; demo <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </article>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+        <!-- Wirelist Convertatron -->
+        <article class="project is-flipped reveal" aria-labelledby="p-wirelist">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-convert">
+              <div class="mc-pane">
+                <header>wires.csv</header>
+<pre><span class="c-mut"># from, to</span>
+_J1-52,P1-1
+_J1-53,P1-2
+_J1-51,P1-3
+_J1-50,P9-4</pre>
+              </div>
+              <span class="mc-arrow"><svg class="ico"><use href="#i-arrow-r"/></svg></span>
+              <div class="mc-pane">
+                <header>instructions.txt</header>
+<pre><span class="c-key">INSTRUCTIONS</span>
+<span class="c-key">BEGIN</span>
+  WIRE, J1-52, J2-17, <span class="c-num">10.0</span> Ohm
+  WIRE, J1-53, J2-18, <span class="c-num">10.0</span> Ohm
+  WIRE, J1-51, J2-19, <span class="c-num">10.0</span> Ohm
+<span class="c-key">END</span></pre>
+              </div>
+              <div class="mc-note"><i></i>Skipped 1 line: unknown point P9-4</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Desktop app + CLI</span><span class="sep"></span><span>Python</span><span class="sep"></span><span>2026</span></div>
+            <h3 id="p-wirelist">Wirelist Convertatron</h3>
+            <p class="project-summary">Converts customer CSV wire lists into Cirris test programs, translating connector and pin labels into tester points. It replaced manual test programming, cutting programming time and the transcription errors that came with it.</p>
+            <ul class="project-points">
+              <li>Paste or open the wire list and label list, edit them in place, and set the resistance written on every wire</li>
+              <li>Unknown points, malformed lines and conflicting labels are listed in a Messages tab, and everything else still converts</li>
+              <li>Ships as a Windows app through GitHub Releases, with a command-line version for batch jobs and scripting</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">CLI</span><span class="tag">PyInstaller</span><span class="tag">Cirris</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/nathanielthick/py-test" target="_blank" rel="noopener">Source <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+              <a class="text-link" href="https://github.com/nathanielthick/py-test/releases" target="_blank" rel="noopener">Download <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </article>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+        <!-- Arcionis -->
+        <article class="project reveal" aria-labelledby="p-arcionis">
+          <div class="project-visual">
+            <div class="mock-browser">
+              <div class="mb-bar" aria-hidden="true">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="mb-url"><svg class="ico"><use href="#i-lock"/></svg>arcioniscarepartners.com</span>
+              </div>
+              <picture>
+                <source srcset="images/projects/arcionis.webp" type="image/webp">
+                <img src="images/projects/arcionis.jpg" width="1200" height="750" loading="lazy" alt="Arcionis Care Partners homepage with the headline 'Care that shows up.' over a view of Redding, California">
+              </picture>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Contract website</span><span class="sep"></span><span class="live"><span class="status-dot" aria-hidden="true"></span>Live</span><span class="sep"></span><span>2026</span></div>
+            <h3 id="p-arcionis">Arcionis Care Partners</h3>
+            <p class="project-summary">The website, domain and email setup for a developmental disability support provider in Redding, California, covering in-home respite, community living supports and scheduled behavioral services.</p>
+            <ul class="project-points">
+              <li>Multi-page site built from scratch, with plain-language service pages, team, resources, FAQ and careers pages, and a service request form</li>
+              <li>Technical SEO: canonical and Open Graph tags, Schema.org data for the organization and its services, a sitemap, and Search Console indexing issues fixed with 301 redirects and HTTPS configuration</li>
+              <li>Registered the domain, managed DNS, and moved staff from personal email to Google Workspace with SPF, DKIM and DMARC</li>
+            </ul>
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Formspree</span><span class="tag">SEO</span><span class="tag">DNS</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://arcioniscarepartners.com/" target="_blank" rel="noopener">Visit the site <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+              <a class="text-link" href="https://github.com/nathanielthick/Arcionis-Care-Partners" target="_blank" rel="noopener">Source <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </article>
 
-							</article>
+        <!-- Whack-a-FOD -->
+        <article class="project is-flipped reveal" aria-labelledby="p-fod">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-game">
+              <div class="mg-hud">
+                <div class="mg-title">Whack-a-<span>FOD</span></div>
+                <div class="mg-stat">SCORE<b>1,240</b></div>
+                <div class="mg-stat">COMBO<b>12</b></div>
+                <div class="mg-stat hot">MULTI<b>x3</b></div>
+              </div>
+              <div class="mg-floor">
+                <span class="mg-banner">FOD FRENZY</span>
+                <div class="mg-hole"><span class="mg-fod wire"></span></div>
+                <div class="mg-hole"></div>
+                <div class="mg-hole"></div>
+                <div class="mg-hole"></div>
+                <div class="mg-hole"><span class="mg-fod gold"></span></div>
+                <div class="mg-hole"></div>
+                <div class="mg-hole"></div>
+                <div class="mg-hole"></div>
+                <div class="mg-hole"><span class="mg-fod d2"></span></div>
+                <svg class="mg-hammer" viewBox="0 0 32 32"><rect x="14" y="10" width="4" height="20" rx="1.5" fill="#a0703a"/><rect x="6" y="3" width="20" height="10" rx="2.5" fill="#c9ced6"/><rect x="6" y="3" width="20" height="3.5" rx="1.5" fill="#e7eaee"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Browser game</span><span class="sep"></span><span>JavaScript</span><span class="sep"></span><span>2026</span></div>
+            <h3 id="p-fod">Whack-a-FOD</h3>
+            <p class="project-summary">A whack-a-mole game about foreign object debris (FOD) on a hangar floor, with combos, a boss fight and a leaderboard shared by everyone who plays.</p>
+            <ul class="project-points">
+              <li>Combo multiplier up to x5, rare gold pieces worth triple, and a penalty for five misses in a row</li>
+              <li>A boss stage with telegraphed attacks, lives, and a pause in the round clock while it lasts</li>
+              <li>Shared online leaderboard backed by Supabase (Postgres), set up with a single SQL script</li>
+              <li>Plain HTML, CSS and JavaScript with no build step and no dependencies, deployed on Netlify</li>
+            </ul>
+            <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">Supabase</span><span class="tag">Netlify</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://zingy-sprite-1a3037.netlify.app/" target="_blank" rel="noopener">Play it <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+              <a class="text-link" href="https://github.com/nathanielthick/FOD-BOSS" target="_blank" rel="noopener">Source <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
 
-					</div>
+      <!-- More projects -->
+      <div class="subhead reveal">
+        <h3>More projects</h3>
+        <p>Hardware, professional and university work</p>
+      </div>
 
-				<!-- Footer -->
-					
-					</footer>
-					<p> </p>
-			</div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-top"><span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-chip"/></svg></span><span class="card-kind">Hardware · KiCad</span></div>
+          <h4>Test adapters &amp; fixture PCBs</h4>
+          <p>Custom adapter PCBs designed in KiCad, including 4-wire Kelvin fixtures for low-resistance measurements, plus first article test adapters built by hand: mating connectors identified, sourced, crimped and soldered.</p>
+          <div class="project-tags"><span class="tag">KiCad</span><span class="tag">4-wire Kelvin</span><span class="tag">Crimp &amp; solder</span></div>
+          <div class="card-link"><a class="text-link" href="https://github.com/nathanielthick/Adapter-3246" target="_blank" rel="noopener">Example design files <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></div>
+        </article>
 
-		<!-- BG -->
-			<div id="bg"></div>
+        <article class="card reveal">
+          <div class="card-top"><span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-cart"/></svg></span><span class="card-kind">E-commerce · Work</span></div>
+          <h4>BigCommerce store launch</h4>
+          <p>Planned and launched a BigCommerce store for a sister company of Pacific Tool &amp; Gauge, with a custom theme built from scratch and shipping, payments, inventory and accounting tied into one system.</p>
+          <div class="project-tags"><span class="tag">BigCommerce</span><span class="tag">Custom theme</span><span class="tag">Integrations</span></div>
+          <div class="card-link"><span class="note">Built in a professional role</span></div>
+        </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <article class="card reveal">
+          <div class="card-top"><span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-layout"/></svg></span><span class="card-kind">Desktop app · Internship</span></div>
+          <h4>Parchment</h4>
+          <p>Built features for Captured Sun's desktop workspace that combines browsing, file management and note-taking, including its integrated file explorer and note-linking system.</p>
+          <div class="project-tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Electron</span></div>
+          <div class="card-link"><span class="note">Team project at Captured Sun</span></div>
+        </article>
 
-	</body>
+        <article class="card reveal">
+          <div class="card-top"><span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-workflow"/></svg></span><span class="card-kind">Automation · Internship</span></div>
+          <h4>PLC code translator</h4>
+          <p>A Python script written at Boise Cascade that translates Rockwell PLC code into readable form, speeding up troubleshooting for maintenance and engineering.</p>
+          <div class="project-tags"><span class="tag">Python</span><span class="tag">Rockwell PLC</span><span class="tag">Parsing</span></div>
+          <div class="card-link"><span class="note">Built at Boise Cascade</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-terminal"/></svg></span><span class="card-kind">Systems · C</span></div>
+          <h4>smallsh</h4>
+          <p>A Unix shell written in C with built-in commands, input and output redirection, foreground and background jobs, and custom signal handling, built on fork, exec and waitpid.</p>
+          <div class="project-tags"><span class="tag">C</span><span class="tag">Unix</span><span class="tag">Processes</span><span class="tag">Signals</span></div>
+          <div class="card-link"><a class="text-link" href="https://github.com/nathanielthick/OSU-Portfolio/tree/main/C_smallsh" target="_blank" rel="noopener">Source <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg></span><span class="card-kind">Digital logic · FPGA</span></div>
+          <h4>VGA animation on an FPGA</h4>
+          <p>Digital logic on an FPGA that drives a VGA display directly, cycling through animation frames stored in ROM.</p>
+          <div class="project-tags"><span class="tag">FPGA</span><span class="tag">VGA timing</span><span class="tag">Digital logic</span></div>
+          <div class="card-link"><a class="text-link" href="https://www.youtube.com/watch?v=J5ulm8RPIpY" target="_blank" rel="noopener">Watch the demo <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Experience ===================== -->
+  <section class="section" id="experience" aria-labelledby="exp-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span class="section-num">02</span> Experience</p>
+          <h2 id="exp-title">Where I've worked</h2>
+        </div>
+        <p>Test engineering, software, web, IT and e-commerce, from the test bench to the storefront.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job-when">Mar 2026 – Present<span class="where">Grants Pass, OR</span></div>
+          <div>
+            <h3>Test Engineer <span class="at">· Impact Electronic Solutions</span></h3>
+            <p class="job-lede">Develop test solutions for IPC Class 3 cable, harness and electronic assemblies, and build the software that speeds that work up.</p>
+            <ul class="project-points">
+              <li>Design and build first article test adapters: identify mating connectors, source parts, crimp and solder</li>
+              <li>Design custom adapter PCBs in KiCad, including 4-wire Kelvin fixtures for low-resistance measurements to customer requirements</li>
+              <li>Write test procedures from customer drawings and IPC class requirements covering continuity, insulation resistance, hipot and functional testing</li>
+              <li>Develop functional tests for on-board thermistors and digital temperature sensors using oscilloscopes and milliohm meters</li>
+              <li>Built <a class="text-link" href="#p-wirelist">Wirelist Convertatron</a> to automate Cirris test programming and <a class="text-link" href="#p-adapter">Adapter Lookup</a> so Cost Estimating can quote with adapters already on hand</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Cirris</span><span class="tag">KiCad</span><span class="tag">IPC Class 3</span><span class="tag">Hipot / IR</span><span class="tag">Oscilloscopes</span><span class="tag">Python</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-when">Jun 2026 – Nov 2026<span class="where">Redding, CA · Contract</span></div>
+          <div>
+            <h3>Web Developer &amp; IT Consultant <span class="at">· Arcionis Care Partners</span></h3>
+            <ul class="project-points">
+              <li>Designed, built and launched the company's multi-page website from scratch, with ongoing content updates</li>
+              <li>Implemented technical SEO and resolved Google Search Console indexing issues with 301 redirects and HTTPS configuration</li>
+              <li>Registered the domain, managed DNS, and deployed Google Workspace email with SPF, DKIM and DMARC; provided ongoing IT support</li>
+            </ul>
+            <div class="project-tags"><span class="tag">HTML/CSS/JS</span><span class="tag">SEO</span><span class="tag">DNS</span><span class="tag">Google Workspace</span><span class="tag">SPF/DKIM/DMARC</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-when">Mar 2025 – Oct 2025<span class="where">Medford, OR</span></div>
+          <div>
+            <h3>eCommerce &amp; IT Coordinator <span class="at">· Pacific Tool &amp; Gauge</span></h3>
+            <p class="job-lede">Ran both the company's IT and its online sales, from the network closet to the storefront.</p>
+            <ul class="project-points">
+              <li>Administered IT for 40+ users: Microsoft 365, Active Directory, Group Policy, Google Workspace, UniFi networking, printers and IP phones</li>
+              <li>Wrote PowerShell and Python scripts to automate workflows and system tasks, and standardized employee onboarding and offboarding</li>
+              <li>Planned and deployed a BigCommerce store for a sister company, integrating shipping, payments, inventory and accounting, with a custom theme built from scratch</li>
+              <li>Ran website sales campaigns and newsletters, contributing to up to a 30% increase in weekly revenue</li>
+              <li>Installed and supported security cameras and IP phone systems across departments</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Microsoft 365</span><span class="tag">Active Directory</span><span class="tag">UniFi</span><span class="tag">BigCommerce</span><span class="tag">PowerShell</span><span class="tag">Python</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-when">Jan 2025 – Mar 2025<span class="where">Medford, OR</span></div>
+          <div>
+            <h3>Desktop Support Technician <span class="at">· Worldwide Tech Services</span></h3>
+            <ul class="project-points">
+              <li>Diagnosed and repaired Dell and Lenovo systems on site under OEM warranty standards</li>
+              <li>Managed a daily service schedule, coordinated parts and arrival times with customers, and kept detailed service records</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Hardware repair</span><span class="tag">Dell</span><span class="tag">Lenovo</span><span class="tag">Field service</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-when">Sep 2023 – Jun 2024<span class="where">Remote · Austin, TX</span></div>
+          <div>
+            <h3>Software Intern <span class="at">· Captured Sun</span></h3>
+            <ul class="project-points">
+              <li>Built features for Parchment, a desktop platform combining browsing, file management and note-taking, including the integrated file explorer and note-linking system</li>
+              <li>Worked in an agile team through planning, development, testing and deployment, with peer code reviews on GitHub and planning in Trello</li>
+            </ul>
+            <div class="project-tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Electron</span><span class="tag">Git</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-when">Jun 2023 – Sep 2023<span class="where">Medford, OR</span></div>
+          <div>
+            <h3>Intern <span class="at">· Boise Cascade Company</span></h3>
+            <ul class="project-points">
+              <li>Queried live production data with Rockwell Ignition and SQL Server Reporting Services, finding a critical data-collection issue that helped maintenance reduce product loss</li>
+              <li>Wrote a Python script that translates Rockwell PLC code into readable form for maintenance and engineering</li>
+              <li>Led planning of a barcode inventory-tracking system and presented it to regional leadership</li>
+            </ul>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">SQL Server</span><span class="tag">SSRS</span><span class="tag">Ignition</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="project-links reveal" style="padding-top:28px">
+        <a class="text-link" href="assets/Nathaniel-Thickett-Resume.pdf" target="_blank" rel="noopener">Full résumé (PDF) <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+        <a class="text-link" href="https://www.linkedin.com/in/nathanielthickett" target="_blank" rel="noopener">LinkedIn <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Skills ===================== -->
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span class="section-num">03</span> Skills</p>
+          <h2 id="skills-title">What I work with</h2>
+        </div>
+        <p>Everything here has been used on a real project or job, not just read about.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>Languages</h3>
+          <ul><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>C</li><li>C++</li><li>PowerShell</li><li>Batch</li><li>VBA</li><li>AVR assembly</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-terminal"/></svg>Software &amp; tooling</h3>
+          <ul><li>React</li><li>Electron</li><li>Tkinter</li><li>PyInstaller</li><li>pyodbc / ODBC</li><li>Git &amp; GitHub</li><li>CI/CD</li><li>Code review</li><li>Desktop apps</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-wave"/></svg>Test &amp; hardware</h3>
+          <ul><li>Cirris test systems</li><li>Test fixture design</li><li>KiCad PCB design</li><li>Hipot / insulation resistance</li><li>4-wire Kelvin</li><li>Oscilloscopes &amp; DMMs</li><li>Crimping &amp; soldering</li><li>First article inspection</li><li>IPC Class 3</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg>Web &amp; e-commerce</h3>
+          <ul><li>HTML &amp; CSS</li><li>Responsive design</li><li>SEO &amp; structured data</li><li>Google Search Console</li><li>BigCommerce</li><li>Formspree</li><li>Supabase</li><li>Netlify</li><li>MJML email</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-server"/></svg>IT systems &amp; networking</h3>
+          <ul><li>Microsoft 365</li><li>Active Directory</li><li>Group Policy</li><li>Google Workspace</li><li>DNS</li><li>SPF / DKIM / DMARC</li><li>UniFi</li><li>IP phones &amp; printers</li><li>Security cameras</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-db"/></svg>Data &amp; process</h3>
+          <ul><li>SQL Server &amp; SSRS</li><li>Rockwell Ignition</li><li>Microsoft Access</li><li>Excel</li><li>Procedure writing</li><li>Root-cause analysis</li><li>Agile &amp; Trello</li><li>User training</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== About ===================== -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span class="section-num">04</span> About</p>
+          <h2 id="about-title">Where hardware and software meet</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="prose">
+            <p>I'm a test engineer and software developer based in Southern Oregon. I studied Computer Science at Oregon State, and I like knowing how things work all the way down: from logic gates and assembly up through operating systems, databases and the web.</p>
+            <p>At <strong>Impact Electronic Solutions</strong> I develop test solutions for IPC Class 3 cable, harness and electronic assemblies, from fixtures and adapter PCBs to written procedures, and I build the Python and desktop tools that automate test programming and cut quoting costs. Before that I ran IT and e-commerce for a growing company, repaired systems on site, interned in software and manufacturing, and built websites on contract.</p>
+            <p>The problems I enjoy most sit between people and systems: the database only one person knows how to query, the spreadsheet nobody wants to touch, the storefront that needs to actually bring in sales.</p>
+          </div>
+
+          <div class="principles">
+            <div class="principle">
+              <span class="n">01</span>
+              <div><h4>Build for the person using it</h4><p>Plain language, keyboard shortcuts, and documentation that makes sense without me in the room.</p></div>
+            </div>
+            <div class="principle">
+              <span class="n">02</span>
+              <div><h4>Make mistakes hard to make</h4><p>Safe defaults, undo, backups and change logs, so a tool earns trust instead of demanding it.</p></div>
+            </div>
+            <div class="principle">
+              <span class="n">03</span>
+              <div><h4>Ship something useful, then improve it</h4><p>A small working version in people's hands first, then changes based on how they actually use it.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-stack">
+          <div class="info-card reveal">
+            <p class="eyebrow">Education</p>
+            <h3>Oregon State University</h3>
+            <p class="sub">B.S. Computer Science</p>
+            <p class="when">2020 – 2024 · Corvallis, OR</p>
+            <p class="body">Coursework included operating systems, computer architecture and assembly, digital logic design, databases, web development, and functional and logic programming (Haskell, Prolog).</p>
+          </div>
+          <div class="info-card reveal">
+            <p class="eyebrow">Certification</p>
+            <h3>IPC/WHMA-A-620 Certified IPC Specialist</h3>
+            <p class="sub">IPC · CIS</p>
+            <p class="body">The industry standard for requirements and acceptance of cable and wire harness assemblies.</p>
+          </div>
+          <div class="info-card reveal">
+            <p class="eyebrow">Quick facts</p>
+            <dl class="facts">
+              <div><dt>Based in</dt><dd>Medford–Grants Pass, OR</dd></div>
+              <div><dt>Current role</dt><dd>Test Engineer</dd></div>
+              <div><dt>Main stack</dt><dd>Python · TypeScript · SQL</dd></div>
+              <div><dt>LinkedIn</dt><dd><a class="text-link" href="https://www.linkedin.com/in/nathanielthickett" target="_blank" rel="noopener">nathanielthickett</a></dd></div>
+              <div><dt>GitHub</dt><dd><a class="text-link" href="https://github.com/nathanielthick" target="_blank" rel="noopener">@nathanielthick</a></dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Contact ===================== -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-card reveal">
+        <p class="eyebrow"><span class="section-num" style="color:inherit">05</span> Contact</p>
+        <h2 id="contact-title">Have a role or a project in mind? Let's talk.</h2>
+        <p class="lede">I'm open to roles in software development, test and process engineering, IT systems and web development, and to freelance website projects. Email or LinkedIn is the fastest way to reach me.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:natethickett@gmail.com?subject=Hello%20Nathaniel"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/nathanielthickett" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <a class="btn btn-secondary" href="assets/Nathaniel-Thickett-Resume.pdf" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-file"/></svg>Résumé</a>
+          <a class="btn btn-secondary" href="https://github.com/nathanielthick" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+        </div>
+        <button class="copy-email" type="button" data-email="natethickett@gmail.com">
+          <svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg>
+          <span class="idle">natethickett@gmail.com<span class="hint"> · click to copy</span></span>
+          <span class="done">Copied to clipboard</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span data-year>2026</span> Nathaniel Thickett · Hand-built with HTML, CSS and a little JavaScript.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/nathanielthickett" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/nathanielthick" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:natethickett@gmail.com">Email</a>
+      <a href="assets/Nathaniel-Thickett-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js?v=20261124" defer></script>
+</body>
 </html>
